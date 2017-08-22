@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/*最顶上灰色的选项栏*/
+.header1{
+	width: 100%;
+	height: 30px;
+	background-color: rgb(245,245,245);
+}
+/*一个装列表的容器*/
+.header1 .content{
+	width: 900px;
+	height: 30px;
+	margin: 0 auto;
+}
+/*去掉列表前面的点*/
+.header1 .content ul{
+	list-style: none;
+	height: 30px;
+}
+/*改变列表中字的样式*/
+.header1 .content ul li{
+	float: right;
+	font-size: 12px;
+	color: darkgray;
+	line-height: 30px;
+}
+.header1 .content ul li a{
+	margin: 0 15px;
+	cursor: pointer;
+	color: darkgray;
+	text-decoration: none;
+}
+.header2{
+	width: 100%;
+	height:120px ;
+	background-color: white;
+}
+.header2 .content{
+	width: 900px;
+	height: 120px;
+	position: relative;
+	margin: 0 auto;
+}
+.header2 .content a{
+	display: block;
+	width: 120px;
+	height: 100%;
+	position: absolute;
+}
+.header2 .content a:nth-child(1){
+	background: url(../img/wph.png) no-repeat 0px 10px;
+	left: 0;
+}
+.header2 .content a:nth-child(2){
+	background: url(../img/100good.jpg) no-repeat center center;
+	right: 360px;
+}
+.header2 .content a:nth-child(3){
+	background: url(../img/7day.jpg) no-repeat center center;
+	right: 240px;
+}
+.header2 .content a:nth-child(4){
+	background: url(../img/sendBack.jpg) no-repeat center center;
+	right: 120px;
+}
+.header2 .content a:nth-child(5){
+	color: rgb(160,160,160);
+	text-align: center;
+	line-height: 120px;
+	right: 0;
+}
+/*//////////////////////////////////////////*/
+.imgfade{
+	width: 100%;
+	height: 500px;
+	margin-top: 40px;
+}
+.imgfade .content{
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+.imgfade .content .images{
+	width: 900px;
+	height: 400px;
+	position: relative;
+}
+.imgfade .content .images img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.imgfade .content .images img:nth-child(1){
+	display: block;
+}
+.imgfade .content .titles{
+	height: 50px;
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.imgfade .content .titles p{
+	cursor: default;
+	height: 40px;
+	width: 150px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: rgb(160,160,160);
+}
+/*-------------------------------------*/
+.navleft{
+	width: 70px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	position: fixed;
+	left: 20px;
+	top: 100px;
+	z-index: 99;
+	display: none;
+}
+.navleft ul{
+	list-style: none;
+	width: 60px;
+	margin: 5px 5px;
+}
+.navleft ul li{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid lightgray;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.navleft ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	line-height: 40px;
+	text-align: right;
+	color: darkgray;
+	font-size: 13px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	background: url(../img/iconNormal.png) no-repeat 0px 11px;
+	background-size: 40%;
+	cursor: pointer;
+}
+.navleft ul li .current{
+	background-color: rgb(244,0,130);
+}
+.navleft ul li .current a{
+	background: url(../img/iconWhite.png) no-repeat 3px center;
+	background-size: 30%;
+	color: white;
+}
+.navleft ul li:last-child{
+	border: none;
+}
+.navleft ul li.uncurrent a:hover{
+	background: url(../img/iconSelected.png) no-repeat 0px 11px;
+	background-size: 40%;
+	color: rgb(244,0,130);
+}
+/*-_________________________________________*/
+.goods{
+	width: 100%;
+	height: 2000px;
+}
+.goods .content{
+	width: 900px;
+	height: 2000px;
+	margin: 0 auto;
+}
+.goods .content .special{
+	width: 100%;
+	height: 700%;
+}
+.special header{
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+.special header span{
+	display: block;
+	position: absolute;
+	width: 30%;
+	height: 1px;
+	background-color: lightgray;
+	top: 39px;
+}
+.special header span:nth-child(3){
+	right: 0;
+}
+.special header .text{
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+}
+.special header .text p{
+	text-align: center;
+}
+.special header .text p:nth-child(1){
+	font-size: 30px;
+	line-height: 60px;
+}
+.special header .text p:nth-child(2){
+	font-size: 12px;
+	line-height: 20px;
+	color: lightgray;
+}
+.special .container{
+	width: 100%;
+	height: 620px;
+}
+.special .container .good{
+	width: 50%;
+	height: 300px;
+	position: relative;
+	float: left;
+}
+.special .container .good img{
+	position: absolute;
+}
+.special .container .good img:nth-child(1){
+	width: 95%;
+	height: 95%;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.special .container .good img:nth-child(2){
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 10px;
+	display: none;
+}
+.special .container .good:hover img:nth-child(1){
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+	-moz-filter:blur(2px);
+}
+.special .container .good:hover img:nth-child(2){
+	display: block;
+}
